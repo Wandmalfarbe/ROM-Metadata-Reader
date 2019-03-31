@@ -1,0 +1,97 @@
+
+.text-unit {
+    -fx-fill: grey;
+}
+
+.text-value {
+    -fx-font-weight: bold;
+}
+
+.group-box {
+    -fx-border-color: -fx-text-box-border;
+    -fx-border-width: 1;
+    -fx-padding: 4 8 4 8;
+}
+
+.file-list, .split-pane {
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+}
+
+.tag {
+    -fx-background-color: #ffa200;
+    -fx-border-radius: 3;
+    -fx-background-radius: 3;
+    -fx-padding: 2 5 2 5;
+}
+
+.tag Text {
+    -fx-fill: white;
+}
+
+.drop-panel {
+    -fx-background-color: derive(-fx-background,25%);
+}
+
+/*---- toolbar ----*/
+
+.tool-bar {
+    -fx-spacing: 0;
+    -fx-background-color: derive(-fx-background,25%);
+}
+
+/******* Split Pane *******/
+
+/* 1px width split pane */
+.split-pane > .split-pane-divider {
+    -fx-background-color: #b5b5b5;
+    -fx-padding: 0 1 0 0;
+}
+/* make (invisible) split pane grabber larger */
+.split-pane:horizontal .split-pane-divider .horizontal-grabber,
+.split-pane:vertical .split-pane-divider .vertical-grabber {
+    -fx-padding: 0.25em;
+}
+
+/******* Scrollbar *******/
+
+.scroll-bar {
+    -fx-background-color: -fx-base;
+    -fx-background-insets: 0;
+}
+
+/* make horizontal increment/decrement buttons square */
+.scroll-bar:horizontal > .increment-button, 
+.scroll-bar:horizontal > .decrement-button {
+    -fx-padding: 0.25em 0.416667em; /* 3 5 */
+    -fx-background-insets: 0;
+}
+
+/* make vertical increment/decrement buttons square */
+.scroll-bar:vertical > .increment-button, 
+.scroll-bar:vertical > .decrement-button {
+    -fx-padding: 0.416667em 0.25em; /* 5 3 */
+    -fx-background-insets: 0;
+}
+
+.scroll-bar > .increment-button:hover, 
+.scroll-bar > .decrement-button:hover {
+    -fx-background-color: #ddd;
+}
+.scroll-bar > .increment-button:pressed, 
+.scroll-bar > .decrement-button:pressed {
+    -fx-background-color: #bbb;
+}
+
+/* make thumb flat */
+.scroll-bar > .thumb {
+    -fx-background-color: #00000022;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+}
+.scroll-bar > .thumb:hover {
+    -fx-background-color: #00000044;
+}
+.scroll-bar > .thumb:pressed {
+    -fx-background-color: #00000066;
+}

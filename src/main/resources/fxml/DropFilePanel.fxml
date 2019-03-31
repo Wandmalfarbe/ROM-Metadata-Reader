@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane minHeight="200.0" minWidth="300.0" styleClass="drop-panel" stylesheets="@style.css" xmlns="http://javafx.com/javafx/" xmlns:fx="http://javafx.com/fxml/">
+    <center>
+        <VBox alignment="CENTER" spacing="20.0" BorderPane.alignment="CENTER">
+            <ImageView fx:id="statusImage" fitHeight="128.0" fitWidth="128.0" pickOnBounds="true" preserveRatio="true">
+                <Image url="@../img/drop-icon.png" />
+            </ImageView>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="%panel.drop_rom_files">
+                <font>
+                   <Font size="18.0" />
+                </font>
+            </Text>
+        </VBox>
+    </center>
+</BorderPane>
